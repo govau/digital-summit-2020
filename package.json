@@ -1,0 +1,47 @@
+{
+  "name": "digital-summit-2020",
+  "version": "1.0.0",
+  "description": "Basic HTML, JS and SCSS development package for Digital Summit.",
+  "main": "",
+  "dependencies": {
+    "autoprefixer": "^8.6.5",
+    "node-sass": "^4.14.1",
+    "npm": "^6.14.7",
+    "postcss-cli": "^7.1.2"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.10",
+    "imagemin-cli": "^6.0.0",
+    "npm-run-all": "^4.1.3",
+    "onchange": "^4.1.0",
+    "sass-versioning": "^0.4.0",
+    "svgo": "^1.1.1"
+  },
+  "scripts": {
+    "build": "node-sass sass/digital-summit-2020.styles.scss css/digital-summit.styles.css --source-map true && npm run build:autoprefix",
+    "build:autoprefix": "postcss css/*.css --use autoprefixer -d css/",
+    "optimise-images": "svgo ./src/images/*.svg -o ./images && imagemin ./src/images/*.{png,jpg,jpeg} --out-dir=./images",
+    "browser-refresh": "browser-sync reload",
+    "watch:js": "onchange \"./js/*.js\" -- npm run cache-rebuild:js && npm run browser-refresh",
+    "watch:sass": "onchange \"src/sass/**/*.scss\" -- npm run build",
+    "serve": "browser-sync start --proxy 'digital-summit-2020.test:8888/' --files=\"css/*.css\" \"js/*.js\" \"html/**/*.html\"",
+    "watch": "npm-run-all --parallel serve build watch:*",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/govau/digital-summit-2020.git"
+  },
+  "author": "Digital Transformation Agency",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/govau/digital-summit-2020/issues"
+  },
+  "homepage": "hhttps://github.com/govau/digital-summit-2020#readme",
+  "browserslist": [
+    "last 2 versions",
+    "ie 8",
+    "ie 9",
+    "ie 10"
+  ]
+}
