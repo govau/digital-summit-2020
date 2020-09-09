@@ -1,1 +1,6 @@
 // Main SCSS file for the Digital Summit 2020 site
+
+body {
+  @import "variables/_variables";
+  @import "base/_base";
+}
