@@ -4,8 +4,11 @@ div[class*="ds-background__"] {
   padding: 2rem 2rem 2rem 2rem;
 }
 .ds-highlight {
-  background: url('background-highlight.jpg') no-repeat center center fixed;
+  background: url('background-highlight.jpg') no-repeat center center;
   background-size: cover;
+  z-index: -1;
+  margin-top: -13rem !important;
+  padding-top: 9rem !important;
 }
 .ds-background__blue {
   background-color: $dark-blue;

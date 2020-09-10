@@ -2,15 +2,23 @@
 
 div.is-wrapper {
   div.is-header-section.is-section.is-box.is-dark-text.is-section-auto {
-    background: $dark-blue !important;
+    background: transparent !important;
     background-image: none;
-    display: block;
     .ds-header__content {
       // This bit needs to 'hang' over the rest of the page.
       height: auto;
       //margin-bottom: -25rem;
       //margin-top: -11rem;
-      z-index: 1100;
+      z-index: 2;
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 16rem;
+      background-color: $dark-blue;
     }
   }
 }
