@@ -1,0 +1,36 @@
+// Navbar layout
+
+.is-wrapper {
+  .nav-brand {
+    background-color: $dark-blue !important;
+    .navbar-nav {
+      .nav-item {
+        .nav-link {
+          padding-right: 0;
+          &::after {
+            content: '|';
+            padding: 0 0 0 0.5rem;
+            display: inline-block;
+          }
+        }
+        &:last-of-type {
+          .nav-link {
+            &::after {
+              content: '';
+            }
+          }
+        }
+      }
+      .nav-link {
+        color: $foreground-light !important;
+        opacity: 1.0 !important;
+        font-size: 0.8rem;
+        font-family: "arial", "sans-serif" !important;
+        text-align: right;
+        &:hover {
+          text-decoration: underline !important;
+        }
+      }
+    }
+  }
+}

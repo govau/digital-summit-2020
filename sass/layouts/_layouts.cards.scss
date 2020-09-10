@@ -1,0 +1,36 @@
+// Layouts for cards
+
+.ds-cards__light,
+.ds-cards__dark {
+  .ds-cards__card {
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+    margin-bottom: 1.5rem;
+    padding: 0.5rem 1.5rem;
+    strong:first-child {
+      display: block;
+      font-weight: bold;
+      font-family: "Montserrat","arial","sans-serif";
+      font-size: 140%;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+.ds-cards__light {
+  .ds-cards__card {
+    background-color: $yellow;
+    p, h3 {
+      color: $foreground-dark;
+    }
+  }
+}
+
+.ds-cards__dark {
+  .ds-cards__card {
+    background-color: $dark-blue;
+    p, h3 {
+      color: $foreground-light;
+    }
+  }
+}

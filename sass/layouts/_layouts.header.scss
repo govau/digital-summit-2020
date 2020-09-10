@@ -1,0 +1,16 @@
+// Header
+
+div.is-wrapper {
+  div.is-header-section.is-section.is-box.is-dark-text.is-section-auto {
+    background: $dark-blue !important;
+    background-image: none;
+    display: block;
+    .ds-header__content {
+      // This bit needs to 'hang' over the rest of the page.
+      height: auto;
+      //margin-bottom: -25rem;
+      //margin-top: -11rem;
+      z-index: 1100;
+    }
+  }
+}

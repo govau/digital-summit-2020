@@ -1,5 +1,17 @@
 // Typography
 
 p {
-  color: $foreground !important;
+  color: $foreground-dark;
+  &.ds-introduction {
+    font-weight: bold;
+    font-size: 120%;
+  }
+}
+
+.btn.ds-button {
+  font-weight: bold;
+  margin: 1rem 0;
+  &:hover {
+    text-decoration: underline;
+  }
 }

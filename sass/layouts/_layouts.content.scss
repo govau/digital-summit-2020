@@ -1,0 +1,60 @@
+// Layouts for the main content area.
+
+div[class*="ds-background__"] {
+  padding: 2rem 2rem 2rem 2rem;
+}
+.ds-highlight {
+  background: url('background-highlight.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+.ds-background__blue {
+  background-color: $dark-blue;
+  color: $foreground-light;
+  h2, h3, a, ds-button {
+    color: $foreground-light;
+  }
+  .ds-button {
+    background-color: $yellow;
+    color: $foreground-dark;
+  }
+}
+
+.ds-background__yellow {
+  background-color: $yellow;
+  color: $foreground-dark;
+  h2, h3, a {
+    color: $foreground-dark;
+  }
+  .ds-button {
+    background-color: $dark-blue;
+    color: $foreground-light;
+  }
+}
+
+.ds-background__white {
+  background-color: $foreground-light;
+  color: $foreground-dark;
+  h2, h3, a {
+    color: $foreground-dark;
+  }
+  .ds-button {
+    background-color: $dark-blue;
+    color: $foreground-light;
+  }
+}
+
+.ds-background__green {
+  background-color: $green;
+  color: $foreground-dark;
+  h2, h3, a {
+    color: $foreground-dark;
+  }
+}
+
+.ds-background__grey {
+  background-color: $foreground-dark;
+  color: $foreground-light;
+  h2, h3, a {
+    color: $foreground-light;
+  }
+}
