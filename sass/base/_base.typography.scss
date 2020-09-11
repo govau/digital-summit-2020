@@ -1,5 +1,12 @@
 // Typography
 
+.branded,
+.is-wrapper {
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Montserrat", arial, sans-serif;
+    font-weight: bold;
+  }
+}
 p {
   color: $foreground-dark;
   &.ds-introduction {
@@ -13,26 +20,5 @@ p {
   margin: 1rem 0;
   &:hover {
     text-decoration: underline;
-  }
-}
-
-.ds-app-download {
-  font-weight: bold;
-  height: 110px;
-  display: table;
-  width: 100%;
-  vertical-align: middle;
-  a {
-    display: table-cell;
-    vertical-align: middle;
-    width: calc(100% - 110px);
-  }
-  a::before {
-    content: '';
-    background: url('icon-download_app.png') no-repeat center center;
-    width: 110px;
-    height:110px;
-    border-radius: 50%;
-    display: table-cell;
   }
 }

@@ -1,63 +1,39 @@
 // Layouts for the main content area.
 
-div[class*="ds-background__"] {
-  padding: 2rem 2rem 2rem 2rem;
-}
+@include background(green);
+@include background(yellow);
+@include background(grey);
+@include background(white);
+@include background(blue);
+
 .ds-highlight {
   background: url('background-highlight.jpg') no-repeat center center;
   background-size: cover;
-  z-index: -1;
-  margin-top: -13rem !important;
-  padding-top: 9rem !important;
-}
-.ds-background__blue {
-  background-color: $dark-blue;
-  color: $foreground-light;
-  h2, h3, a, ds-button {
-    color: $foreground-light;
-  }
-  .ds-button {
-    background-color: $yellow;
-    color: $foreground-dark;
+  @include breakpoint(md) {
+    z-index: -1;
+    margin-top: -13rem !important;
+    padding-top: 9rem !important;
   }
 }
 
-.ds-background__yellow {
-  background-color: $yellow;
-  color: $foreground-dark;
-  h2, h3, a {
-    color: $foreground-dark;
+.ds-app-download {
+  font-weight: bold;
+  display: table;
+  width: 100%;
+  vertical-align: middle;
+  a {
+    display: table-row;
   }
-  .ds-button {
-    background-color: $dark-blue;
-    color: $foreground-light;
+  .ds-icon-download_app {
+    background: url('icon-download_app.png') no-repeat center center;
+    width: 110px;
+    height:110px;
+    border-radius: 50%;
+    display: table-cell;
   }
-}
-
-.ds-background__white {
-  background-color: $foreground-light;
-  color: $foreground-dark;
-  h2, h3, a {
-    color: $foreground-dark;
-  }
-  .ds-button {
-    background-color: $dark-blue;
-    color: $foreground-light;
-  }
-}
-
-.ds-background__green {
-  background-color: $green;
-  color: $foreground-dark;
-  h2, h3, a {
-    color: $foreground-dark;
-  }
-}
-
-.ds-background__grey {
-  background-color: $foreground-dark;
-  color: $foreground-light;
-  h2, h3, a {
-    color: $foreground-light;
+  .ds-app-download_text {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 1.5rem;
   }
 }

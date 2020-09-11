@@ -3,8 +3,10 @@
 .ds-cards__light,
 .ds-cards__dark {
   .ds-cards__card {
-    margin-left: 0.75rem;
-    margin-right: 0.75rem;
+    @include breakpoint(md) {
+      margin-left: 0.75rem;
+      margin-right: 0.75rem;
+    }
     margin-bottom: 1.5rem;
     padding: 0.5rem 1.5rem;
     strong:first-child {
@@ -33,4 +35,17 @@
       color: $foreground-light;
     }
   }
+}
+
+.ds-cards__card-text {
+  font-size: 90%;
+}
+.ds-cards__card-intro {
+  font-weight: bold;
+}
+.ds-cards__card-image {
+  width:100%;
+  margin-bottom: 1rem;
+  height: auto;
+  background-color: $foreground-light;
 }

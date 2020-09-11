@@ -7,9 +7,11 @@ body {
   @import "layouts/_layouts";
 }
 
-html {
-  background: url('background-body.jpg') no-repeat center center fixed;
-  background-color: $pale-yellow;
-  background-blend-mode: overlay;
-  background-size: cover;
+@include breakpoint(lg) {
+  html {
+    background: url('background-body.jpg') no-repeat center center fixed;
+    background-color: $pale-yellow;
+    background-blend-mode: overlay;
+    background-size: cover;
+  }
 }
