@@ -1,0 +1,7 @@
+---
+buildpack: staticfile_buildpack
+memory: 128MB
+instances: 2
+path: ./dist
+applications:
+- name: digital-summit-2020
