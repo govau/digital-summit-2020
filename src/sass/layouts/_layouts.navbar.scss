@@ -29,6 +29,14 @@
           color: $foreground-dark !important;
           transition: all 0.1s ease-out;
         }
+        @include breakpoint(md) {
+          &:active {
+            background-color: transparent;
+            border-radius: 0;
+            color: $foreground-light !important;
+            transition: none;
+          }
+        }
         &::before {
           content: '';
           padding-right: 0.5rem;
