@@ -1,0 +1,30 @@
+// Page menus
+
+.ds-page-menu {
+  z-index: 1500;
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    li {
+      display: inline-block;
+      margin-right: 1rem;
+      &::after {
+        content: '|';
+        padding-left: 1rem;
+      }
+      &:last-child::after {
+        content: '';
+      }
+      a {
+        font-weight: bold;
+      }
+    }
+  }
+  .ds-light & {
+
+  }
+  .ds-dark & {
+
+  }
+}
