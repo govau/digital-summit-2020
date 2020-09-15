@@ -1,14 +1,12 @@
 // Layouts for cards
 
-.ds-cards__light,
-.ds-cards__dark {
+.ds-cards {
   .ds-cards__card {
-    @include breakpoint(md) {
-      margin-left: 0.75rem;
-      margin-right: 0.75rem;
+    .ds-cards__card-inner {
+      height: 100%;
+      padding: 0.5rem 1rem;
     }
-    margin-bottom: 1.5rem;
-    padding: 0.5rem 1.5rem;
+    padding: 0.5rem;
     strong:first-child {
       display: block;
       font-weight: bold;
@@ -19,20 +17,24 @@
   }
 }
 
-.ds-cards__light {
+.ds-dark .ds-cards {
   .ds-cards__card {
-    background-color: $yellow;
-    p, h3 {
-      color: $foreground-dark;
+    .ds-cards__card-inner {
+      background-color: $yellow;
+      p, h3 {
+        color: $foreground-dark;
+      }
     }
   }
 }
 
-.ds-cards__dark {
+.ds-light .ds-cards {
   .ds-cards__card {
-    background-color: $dark-blue;
-    p, h3 {
-      color: $foreground-light;
+    .ds-cards__card-inner {
+      background-color: $dark-blue;
+      p, h3 {
+        color: $foreground-light;
+      }
     }
   }
 }

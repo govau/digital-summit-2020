@@ -11,8 +11,13 @@
   background-size: cover;
   @include breakpoint(md) {
     z-index: -1;
-    margin-top: -13rem !important;
+    margin-top: -11rem !important;
     padding-top: 9rem !important;
+  }
+  @include breakpoint(lg) {
+    z-index: -1;
+    margin-top: -13rem !important;
+    padding-top: 11rem !important;
   }
 }
 
