@@ -21,24 +21,10 @@
   }
 }
 
-.ds-app-download {
-  font-weight: bold;
-  display: table;
-  width: 100%;
-  vertical-align: middle;
-  a {
-    display: table-row;
+.ds-app-download__icon {
+  &.apple {
+    padding: 0.8rem;
   }
-  .ds-icon-download_app {
-    background: url('icon-download_app.png') no-repeat center center;
-    width: 110px;
-    height:110px;
-    border-radius: 50%;
-    display: table-cell;
-  }
-  .ds-app-download_text {
-    display: table-cell;
-    vertical-align: middle;
-    padding: 1.5rem;
-  }
+  height: 5rem;
+  width: auto;
 }
