@@ -22,9 +22,6 @@
 }
 
 .ds-app-download__icon {
-  &.apple {
-    padding: 0.8rem;
-  }
-  height: 5rem;
-  width: auto;
+  width: 100%;
+  height: auto;
 }

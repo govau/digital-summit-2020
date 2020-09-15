@@ -1,6 +1,7 @@
 // Footer styles
 
 .ds-footer {
+  border-top: 0.5rem solid $yellow;
   .ds-footer__text {
     @media (min-width: 992px) {
       p, li {

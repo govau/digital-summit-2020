@@ -17,6 +17,18 @@
   }
 }
 
+.ds-highlight .ds-cards {
+  .ds-cards__card {
+    .ds-cards__card-inner {
+      background-color: transparentize($dark-blue, 0.1) !important;
+      border-left: 0.25rem solid $yellow;
+      p, h3 {
+        color: $foreground-light !important;
+      }
+    }
+  }
+}
+
 .ds-dark .ds-cards {
   .ds-cards__card {
     .ds-cards__card-inner {
