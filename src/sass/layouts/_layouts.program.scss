@@ -1,0 +1,90 @@
+// Layouts for the program
+
+.ds-program {
+  .ds-program__exhibition {
+    border-top: 0.5rem solid $purple;
+  }
+  .ds-program__keynote {
+    border-top: 0.5rem solid $green;
+  }
+  .ds-program__awards {
+    border-top: 0.5rem solid $orange;
+  }
+  .ds-program__plenary {
+    border-top: 0.5rem solid $forest-green;
+    .ds-cards__card-inner {
+      border-top: 0.25rem solid $forest-green;
+    }
+  }
+  .ds-program__welcome,
+  .ds-program__close {
+    border-top: 0.5rem solid $pink;
+  }
+  .ds-program__workshops {
+    border-top: 0.5rem solid $yellow;
+    .ds-cards__card-inner {
+      border-top: 0.25rem solid $yellow;
+    }
+  }
+  .ds-program__ondemand {
+    border-top: 0.5rem solid $blue;
+    .ds-cards__card-inner {
+      border-top: 0.25rem solid $blue;
+    }
+  }
+  .ds-program__image {
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 50%;
+      border: 0.25rem solid;
+      .ds-dark & {
+        border-color: $foreground-dark;
+        background-color: $foreground-light;
+      }
+      .ds-light & {
+        border-color: $foreground-light;
+        background-color: $foreground-dark;
+      }
+    }
+    &.ds-program__image-multiple {
+      position: relative;
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 5rem;
+        width: 5rem;
+        & + img {
+          top: 3.5rem;
+          & + img {
+            top: 7rem;
+          }
+        }
+      }
+      @include breakpoint(md) {
+        height: 5rem;
+        margin-bottom: 1rem;
+        img {
+          top: 0;
+          left: 0;
+          height: 5rem;
+          width: 5rem;
+          & + img {
+            top: 0;
+            left: 35%;
+            & + img {
+              top: 0;
+              left: 70%;
+            }
+          }
+        }
+      }
+    }
+  }
+  .ds-program__speaker-name, {
+    a {
+      font-weight: bold;
+    }
+  }
+}

@@ -7,13 +7,6 @@
       padding: 0.5rem 1rem;
     }
     padding: 0.5rem;
-    strong:first-child {
-      display: block;
-      font-weight: bold;
-      font-family: "Montserrat","arial","sans-serif";
-      font-size: 140%;
-      margin-bottom: 1rem;
-    }
   }
 }
 
@@ -22,7 +15,7 @@
     .ds-cards__card-inner {
       background-color: transparentize($dark-blue, 0.1) !important;
       border-left: 0.25rem solid $yellow;
-      p, h3, li {
+      p, h3, li, h4, a {
         color: $foreground-light !important;
       }
     }
@@ -33,12 +26,15 @@
   .ds-cards__card {
     .ds-cards__card-inner {
       background-color: $yellow;
-      p, h3, li {
+      p, h3, li, h4, a, img {
         color: $foreground-dark;
       }
       li {
         font-size: 90%;
       }
+    }
+    .ds-cards__card {
+      border-left: 0.25rem solid $foreground-dark;
     }
   }
 }
@@ -47,7 +43,7 @@
   .ds-cards__card {
     .ds-cards__card-inner {
       background-color: $dark-blue;
-      p, h3, li {
+      p, h3, li, h4, a, img {
         color: $foreground-light;
       }
       li {
