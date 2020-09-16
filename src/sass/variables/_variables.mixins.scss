@@ -60,8 +60,8 @@ $bg-colors: (
   $btn-fg: map-deep-get($bg-colors, $color, "btn-fg");
   $btn-bg: map-deep-get($bg-colors, $color, "btn-bg");
   .ds-background__#{$color} {
-    padding: 2rem 2rem 2rem 2rem;
-    background-color: $bg;
+    padding: 2rem 2rem 2rem 2rem !important;
+    background-color: $bg !important;
     color: $fg;
     h2, h3, a {
       color: $fg;

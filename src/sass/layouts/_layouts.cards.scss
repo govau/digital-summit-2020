@@ -25,16 +25,13 @@
 .ds-dark .ds-cards {
   .ds-cards__card {
     .ds-cards__card-inner {
-      background-color: $yellow;
+      background-color: $foreground-light;
       p, h3, li, h4, a, img {
         color: $foreground-dark;
       }
       li {
         font-size: 90%;
       }
-    }
-    .ds-cards__card {
-      border-left: 0.25rem solid $foreground-dark;
     }
   }
 }
