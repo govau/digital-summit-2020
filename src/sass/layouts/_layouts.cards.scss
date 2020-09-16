@@ -15,7 +15,7 @@
     .ds-cards__card-inner {
       background-color: transparentize($dark-blue, 0.1) !important;
       border-left: 0.25rem solid $yellow;
-      p, h3, li, h4, a {
+      * {
         color: $foreground-light !important;
       }
     }
@@ -26,7 +26,7 @@
   .ds-cards__card {
     .ds-cards__card-inner {
       background-color: $foreground-light;
-      p, h3, li, h4, a, img {
+      * {
         color: $foreground-dark;
       }
       li {
@@ -40,7 +40,7 @@
   .ds-cards__card {
     .ds-cards__card-inner {
       background-color: $dark-blue;
-      p, h3, li, h4, a, img {
+      * {
         color: $foreground-light;
       }
       li {

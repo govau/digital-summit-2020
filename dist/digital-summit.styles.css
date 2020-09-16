@@ -235,19 +235,19 @@ div.is-wrapper div.is-header-section.is-section.is-box.is-dark-text.is-section-a
 .ds-highlight .ds-cards .ds-cards__card .ds-cards__card-inner {
   background-color: rgba(30, 55, 77, 0.9) !important;
   border-left: 0.25rem solid #f9ec31; }
-  .ds-highlight .ds-cards .ds-cards__card .ds-cards__card-inner p, .ds-highlight .ds-cards .ds-cards__card .ds-cards__card-inner h3, .ds-highlight .ds-cards .ds-cards__card .ds-cards__card-inner li, .ds-highlight .ds-cards .ds-cards__card .ds-cards__card-inner h4, .ds-highlight .ds-cards .ds-cards__card .ds-cards__card-inner a {
+  .ds-highlight .ds-cards .ds-cards__card .ds-cards__card-inner * {
     color: white !important; }
 
 .ds-dark .ds-cards .ds-cards__card .ds-cards__card-inner {
   background-color: white; }
-  .ds-dark .ds-cards .ds-cards__card .ds-cards__card-inner p, .ds-dark .ds-cards .ds-cards__card .ds-cards__card-inner h3, .ds-dark .ds-cards .ds-cards__card .ds-cards__card-inner li, .ds-dark .ds-cards .ds-cards__card .ds-cards__card-inner h4, .ds-dark .ds-cards .ds-cards__card .ds-cards__card-inner a, .ds-dark .ds-cards .ds-cards__card .ds-cards__card-inner img {
+  .ds-dark .ds-cards .ds-cards__card .ds-cards__card-inner * {
     color: #333333; }
   .ds-dark .ds-cards .ds-cards__card .ds-cards__card-inner li {
     font-size: 90%; }
 
 .ds-light .ds-cards .ds-cards__card .ds-cards__card-inner {
   background-color: #1e374d; }
-  .ds-light .ds-cards .ds-cards__card .ds-cards__card-inner p, .ds-light .ds-cards .ds-cards__card .ds-cards__card-inner h3, .ds-light .ds-cards .ds-cards__card .ds-cards__card-inner li, .ds-light .ds-cards .ds-cards__card .ds-cards__card-inner h4, .ds-light .ds-cards .ds-cards__card .ds-cards__card-inner a, .ds-light .ds-cards .ds-cards__card .ds-cards__card-inner img {
+  .ds-light .ds-cards .ds-cards__card .ds-cards__card-inner * {
     color: white; }
   .ds-light .ds-cards .ds-cards__card .ds-cards__card-inner li {
     font-size: 90%; }
