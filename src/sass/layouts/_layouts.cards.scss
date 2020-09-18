@@ -5,6 +5,9 @@
     .ds-cards__card-inner {
       height: 100%;
       padding: 0.5rem 1rem;
+      p, li, a {
+        font-size: 100%;
+      }
     }
     padding: 0.5rem;
   }
@@ -29,9 +32,6 @@
       * {
         color: $foreground-dark;
       }
-      li {
-        font-size: 90%;
-      }
     }
   }
 }
@@ -43,15 +43,12 @@
       * {
         color: $foreground-light;
       }
-      li {
-        font-size: 90%;
-      }
     }
   }
 }
 
 .ds-cards__card-text {
-  font-size: 90%;
+  font-size: 100%;
 }
 .ds-cards__card-intro {
   font-weight: bold;

@@ -3,14 +3,13 @@
 .ds-callout {
   .ds-dark & {
     background-color: transparentize($foreground-dark, 0.5);
-    border-color: $yellow;
   }
   .ds-light & {
-    background-color: transparentize($foreground-light, 0.5);
-    border-color: $dark-blue;
+    background-color: transparentize($foreground-dark, 0.8);
   }
   border-left-width: 0.5rem;
   border-left-style: solid;
   padding: 1rem;
   font-size: 1.2rem;
+  border-color: $yellow;
 }
