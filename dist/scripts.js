@@ -1,6 +1,22 @@
 (function($) {
   'use strict';
   $('body').addClass('js');
+  function convertToSlug(text) {
+    // Creates 'slugs' out of text.
+    return text
+      .toLowerCase()
+      .replace(/[^\w ]+/g,'')
+      .replace(/ +/g,'-');
+    }
+
+  function addAnchors() {
+    // This adds anchors to all H2s and H3s on pages.
+
+    $('h2, h3').each(function() {
+      var text = $(this).text();
+      $(this).attr('id', convertToSlug(text));
+    });
+  }
   $('.is-section a')
     .not('.no-smooth-scroll')
     .on('click', function(event) {
@@ -51,4 +67,6 @@
         ga('send', 'event', eventCategory, 'Download', eventLabel);
       });
   });
+  addAnchors();
+  addLinks();
 }(jQuery));

@@ -163,9 +163,13 @@
       }
     }
   }
-  .ds-program__speaker-name, {
+  .ds-program__speaker-name {
     a {
       font-weight: bold;
     }
+  }
+  .ds-program__synopsis {
+    border-top: 1px solid $foreground-light;
+    padding-top: 1.5rem;
   }
 }
