@@ -7,7 +7,7 @@
 @include background(blue);
 
 .ds-highlight {
-  background: url('background-highlight.jpg') no-repeat center center;
+  background: url('/img/background-highlight.jpg') no-repeat center center;
   background-size: cover;
   @include breakpoint(md) {
     z-index: 0;

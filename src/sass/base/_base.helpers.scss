@@ -1,38 +1,38 @@
 // Helper styles and classes
 
 // This is a development helper to test responsiveness.
-body::before {
-  color: $foreground-light;
-  font-weight: bold;
-  position: fixed;
-  width: auto;
-  height: auto;
-  line-height: 1.0;
-  display: block;
-  bottom: 0;
-  left: 0;
-  z-index: 2000;
-  background-color: $dark-blue;
-  opacity: 0.8;
-  padding: 1rem;
-  @include breakpoint(xs) {
-    content: 'Extra small - 575px and below';
-  }
-  @include breakpoint(sm) {
-    content: 'Small - 576px and above';
-  }
-
-  @include breakpoint(md) {
-    content: 'Medium - 776px and above';
-  }
-
-  @include breakpoint(lg) {
-    content: 'Large - 992px and above';
-  }
-  @include breakpoint(xl) {
-    content: 'Extra large - 1200px and above';
-  }
-}
+// body::before {
+//   color: $foreground-light;
+//   font-weight: bold;
+//   position: fixed;
+//   width: auto;
+//   height: auto;
+//   line-height: 1.0;
+//   display: block;
+//   bottom: 0;
+//   left: 0;
+//   z-index: 2000;
+//   background-color: $dark-blue;
+//   opacity: 0.8;
+//   padding: 1rem;
+//   @include breakpoint(xs) {
+//     content: 'Extra small - 575px and below';
+//   }
+//   @include breakpoint(sm) {
+//     content: 'Small - 576px and above';
+//   }
+//
+//   @include breakpoint(md) {
+//     content: 'Medium - 776px and above';
+//   }
+//
+//   @include breakpoint(lg) {
+//     content: 'Large - 992px and above';
+//   }
+//   @include breakpoint(xl) {
+//     content: 'Extra large - 1200px and above';
+//   }
+// }
 
 .visually-hidden {
     position: absolute !important;
