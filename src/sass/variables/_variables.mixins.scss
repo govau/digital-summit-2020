@@ -69,6 +69,11 @@ $bg-colors: (
     .ds-button {
       background-color: $btn-bg;
       color: $btn-fg;
+      &.ds-button__secondary {
+        background-color: transparent;
+        color: $btn-bg;
+        border: 2px solid $btn-bg;
+      }
     }
     &.ds-background__overhang {
       background-color: $foreground-light !important;
