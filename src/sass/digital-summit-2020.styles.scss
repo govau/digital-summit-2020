@@ -9,8 +9,8 @@ body {
 
 @include breakpoint(lg) {
   html {
-    background: url('/img/background-body.jpg') no-repeat center center fixed;
-    background-color: $pale-yellow;
+    //background: url('/img/background-body.jpg') no-repeat center center fixed;
+    background-color: $light-grey;
     background-size: cover;
   }
 }

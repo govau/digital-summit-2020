@@ -68,5 +68,4 @@
       });
   });
   addAnchors();
-  addLinks();
 }(jQuery));
