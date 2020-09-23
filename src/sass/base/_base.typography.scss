@@ -6,10 +6,14 @@
     font-family: "Montserrat", arial, sans-serif;
     font-weight: bold;
   }
+  p {
+    font-family: arial, helvetica, sans-serif;
+  }
 }
 p {
   padding: 0.5rem 0;
   color: $foreground-dark;
+  font-family: arial, helvetica, sans-serif;
   &.ds-introduction {
     font-weight: bold;
     font-size: 120%;

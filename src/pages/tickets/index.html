@@ -7,7 +7,8 @@
             <h1 class="visually-hidden">Digital Summit 2020 Tickets</h1>
             <h2>Tickets</h2>
             <p class="ds-introduction">The Digital Summit will be held over 4 days between 10 and 19 November 2020 as a virtual event.</p>
-            <p>We're offering a set of flexible ticket options so you cna make the most out of your Digital Summit expreience. <a href="/program/">View the program for the Digital Summit</a>.</p>
+            <p>We have a set of flexible ticket options so you can make the most out of <a href="/program/">your Digital Summit expreience</a>.</p>
+            <p><em>All dates and prices are subject to change.</em></p>
           </div>
         </div>
       </div>
@@ -22,7 +23,7 @@
         <div class="row">
           <div class="col-12">
             <h2>Early bird</h2>
-            <p class="ds-callout">Closes TBA October 2020</p>
+            <p class="ds-callout">Closes 5:00 pm, 11 October 2020.</p>
             <div class="row">
               <div class="col-md-12 ds-cards">
                 <div class="row">
@@ -45,11 +46,7 @@
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-12">
-            <a href="#" class="btn ds-button">Buy tickets</a>
-          </div>
-        </div>
+        {{> buy-tickets }}
       </div>
     </div>
   </div>
@@ -62,7 +59,7 @@
         <div class="row">
           <div class="col-12">
             <h2>Standard</h2>
-            <p class="ds-callout">Closes Midnight, 8 November 2020</p>
+            <p class="ds-callout">Opens 5:00 pm, 11 October 2020. Closes 5:00 pm, 8 November 2020</p>
             <div class="row">
               <div class="col-md-12 ds-cards">
                 <div class="row">
@@ -80,6 +77,28 @@
                       <p class="ds-cards__card-text">Access to one day of your choice. This includes access to all plenary sessions, case studies, on-demand presentations, and access to the virtual exhibition hub on that specified day. Excludes workshops.</p>
                     </div>
                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {{> buy-tickets}}
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="is-section is-section-auto is-box">
+  <div class="is-boxes">
+    <div class="is-box-centered">
+      <div class="is-container is-builder container-fluid-fluid ds-background__white ds-light">
+        <div class="row">
+          <div class="col-12">
+            <h2>Student</h2>
+            <p class="ds-callout">Opens 12:00 pm 25 September. Closes 5:00 pm, 8 November 2020</p>
+            <div class="row">
+              <div class="col-md-12 ds-cards">
+                <div class="row">
                   <div class="col-12 col-md-6 ds-cards__card">
                     <div class="ds-cards__card-inner">
                       <h3 class="ds-cards__card-title">Standard student registration &ndash; all days</h3>
@@ -99,11 +118,7 @@
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-12">
-            <a href="#" class="btn ds-button">Buy tickets</a>
-          </div>
-        </div>
+        {{> buy-tickets}}
       </div>
     </div>
   </div>
@@ -112,12 +127,12 @@
 <div class="is-section is-section-auto is-box">
   <div class="is-boxes">
     <div class="is-box-centered">
-      <div class="is-container is-builder container-fluid-fluid ds-background__white ds-light">
+      <div class="is-container is-builder container-fluid-fluid ds-background__blue ds-dark">
         <div class="row">
           <div class="col-12">
             <h2>Workshops</h2>
             <div class="ds-callout">
-              <p><strong>Closes Midnight, 8 November 2020</strong></p>
+              <p><strong>Closes 5:00 pm, 8 November 2020</strong></p>
               <p>Workshop registration is $165.00 per workshop</p>
               <p>Each ticket is for a single workshop only. These are likely to sell out. You cannot transfer tickets to another workshop.</p>
             </div>
@@ -130,8 +145,8 @@
                       <p class="ds-cards__card-intro">12:16 pm to 1:15 pm, Tuesday 10 November</p>
                       <p class="ds-cards__card-text">30 tickets available per workshop</p>
                         <ul>
-                          <li>Workshop Name &ndash; 55 minutes</li>
-                          <li>Workshop Name &ndash; 55 minutes</li>
+                          <li>Workshop 1 &ndash; 55 minutes</li>
+                          <li>Workshop 2 &ndash; 55 minutes</li>
                         </ul>
                     </div>
                   </div>
@@ -141,8 +156,8 @@
                       <p class="ds-cards__card-intro">12:16 pm to 1:15 pm, Thursday 12 November</p>
                       <p class="ds-cards__card-text">30 tickets available per workshop</p>
                         <ul>
-                          <li>Workshop Name &ndash; 55 minutes</li>
-                          <li>Workshop Name &ndash; 55 minutes</li>
+                          <li>Workshop 1 &ndash; 55 minutes</li>
+                          <li>Workshop 2 &ndash; 55 minutes</li>
                         </ul>
                     </div>
                   </div>
@@ -152,8 +167,8 @@
                       <p class="ds-cards__card-intro">12:16 pm to 1:15 pm, Tuesday 17 November</p>
                       <p class="ds-cards__card-text">30 tickets available per workshop</p>
                         <ul>
-                          <li>Workshop Name &ndash; 55 minutes</li>
-                          <li>Workshop Name &ndash; 55 minutes</li>
+                          <li>Workshop 1 &ndash; 55 minutes</li>
+                          <li>Workshop 2 &ndash; 55 minutes</li>
                         </ul>
                     </div>
                   </div>
@@ -163,8 +178,8 @@
                       <p class="ds-cards__card-intro">12:16 pm to 1:15 pm, Thursday 19 November</p>
                       <p class="ds-cards__card-text">30 tickets available per workshop</p>
                         <ul>
-                          <li>Workshop Name &ndash; 55 minutes</li>
-                          <li>Workshop Name &ndash; 55 minutes</li>
+                          <li>Workshop 1 &ndash; 55 minutes</li>
+                          <li>Workshop 2 &ndash; 55 minutes</li>
                         </ul>
                     </div>
                   </div>
@@ -173,11 +188,7 @@
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-12">
-            <a href="#" class="btn ds-button">Buy tickets</a>
-          </div>
-        </div>
+        {{> buy-tickets }}
       </div>
     </div>
   </div>
