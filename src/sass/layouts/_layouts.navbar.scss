@@ -5,6 +5,8 @@
     background-color: $dark-blue !important;
     &.navbar-dark {
       .navbar-toggler {
+        color: $foreground-light;
+        border-color: $foreground-light;
         .navbar-toggler-icon {
           background-image: url('data:image/svg+xml;charset=utf8,<svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"><line stroke="rgba(255, 255, 255, 1.0)" stroke-width="2" stroke-linecap="round" y2="26" x2="26" y1="4" x1="4" /><line stroke="rgba(255, 255, 255, 1.0)" stroke-width="2" stroke-linecap="round" y2="26" x2="26" y1="4" x1="4" transform="rotate(-90 15, 15)" /></svg>');
           transition: all 0.3s ease-out;
@@ -45,6 +47,7 @@
         }
         &.active {
           font-weight: bold;
+          margin-left: 0rem;
           &::before {
             content: '>';
             padding-right: 0.5rem;
