@@ -24,24 +24,15 @@
         opacity: 1.0 !important;
         font-family: "arial", "sans-serif" !important;
         margin-left: -1rem;
-        padding-left: 0.5rem;
         &:active {
           background-color: $foreground-light;
           border-radius: 0.25rem;
           color: $foreground-dark !important;
           transition: all 0.1s ease-out;
         }
-        @include breakpoint(md) {
-          &:active {
-            background-color: transparent;
-            border-radius: 0;
-            color: $foreground-light !important;
-            transition: none;
-          }
-        }
         &::before {
           content: '';
-          padding-right: 0.5rem;
+          padding-right: 2rem;
           display: inline-block;
           width: 1rem;
         }
@@ -56,7 +47,7 @@
           }
         }
         &:hover {
-          text-decoration: underline !important;
+          text-decoration: underline;
         }
       }
     }
@@ -64,21 +55,32 @@
       .navbar-nav {
         .nav-item {
           .nav-link {
-            text-align: right;
-            font-size: 1.0rem;
-            padding-right: 0;
-            &.active {
-              &::before {
-                content: '';
-                padding-right: 0;
-                display: inline;
-                width: 0;
-              }
+            text-align: center;
+            padding: 0 0 0.5rem 0;
+            margin: 0 0.5rem;
+            border-bottom: 4px solid transparent;
+            &:hover {
+              transition: border-bottom-color 0.2s ease-in-out;
+              text-decoration: none;
+              border-bottom-color: $green;
             }
-            &::after {
-              content: '|';
-              padding: 0 0 0 0.5rem;
-              display: inline-block;
+            &:active {
+              border-bottom-color: $yellow;
+              background-color: transparent;
+              border-radius: 0;
+              color: $foreground-light !important;
+              transition: none;
+            }
+            &::before {
+              content: '';
+              display: none;
+            }
+            &.active {
+              font-weight: normal;
+              border-bottom: 4px solid $foreground-light;
+              &::before {
+                display: none;
+              }
             }
           }
           &:last-of-type {
@@ -87,16 +89,6 @@
                 content: '';
               }
             }
-          }
-        }
-      }
-    }
-    @include breakpoint(lg) {
-      .navbar-nav {
-        .nav-item {
-          .nav-link {
-            text-align: right;
-            font-size: 0.8rem;
           }
         }
       }
