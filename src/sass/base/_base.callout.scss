@@ -1,6 +1,7 @@
 // Callout
 
 .ds-callout {
+  margin-bottom: 1rem;
   .ds-dark & {
     background-color: transparentize($foreground-dark, 0.5);
   }
