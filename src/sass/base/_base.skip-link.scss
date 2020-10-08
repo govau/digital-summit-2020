@@ -1,0 +1,28 @@
+.ds-skip-link {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+    &:active,
+    &:focus {
+      outline: 3px solid #9263DE;
+      outline-offset: 2px;
+      top: 2rem;
+      left: 2rem;
+      padding: 1.5rem;
+      clip: auto;
+      height: auto;
+      margin: 0;
+      overflow: visible;
+      position: absolute;
+      width: auto;
+      color: $foreground-dark;
+      background-color: $foreground-light;
+      text-decoration: underline;
+      z-index: 1001;
+    }
+}

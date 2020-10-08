@@ -1,9 +1,10 @@
 // Index file for the base SCSS files
 
-@import "_base.resets";
-@import "_base.helpers";
-@import "_base.typography";
-@import "_base.callout";
-@import "_base.page-menu";
-@import "_base.draft";
-@import "_base.js";
+@import "base.resets";
+@import "base.helpers";
+@import "base.typography";
+@import "base.callout";
+@import "base.page-menu";
+@import "base.draft";
+@import "base.js";
+@import "base.skip-link";
