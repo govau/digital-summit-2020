@@ -14,7 +14,7 @@
   function addAnchors() {
     // This adds anchors to all H2s and H3s on pages.
 
-    $('h2, h3').each(function() {
+    $('h2, h3, h4').each(function() {
       var text = $(this).text();
       $(this).attr('id', convertToSlug(text));
     });
