@@ -23,8 +23,11 @@
     &.ds-program__workshops {
       border-left-color: $yellow;
     }
-    &.ds-program__ondemand {
+    &.ds-program__on-demand {
       border-left-color: $blue;
+    }
+    &.ds-program__case-studies {
+      border-left-color: $dark-purple;
     }
   }
 }
