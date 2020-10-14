@@ -26,6 +26,12 @@
       border-top: 0.25rem solid $yellow;
     }
   }
+  .ds-program__case-studies {
+    border-top: 0.5rem solid $dark-purple;
+    .ds-cards__card-inner {
+      border-top: 0.25rem solid $dark-purple;
+    }
+  }
   .ds-program__ondemand {
     border-top: 0.5rem solid $blue;
     .ds-cards__card-inner {
