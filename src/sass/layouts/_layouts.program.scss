@@ -6,6 +6,9 @@
   }
   .ds-program__keynote {
     border-top: 0.5rem solid $green;
+    .ds-cards__card-inner {
+      border-top: 0.25rem solid $green;
+    }
   }
   .ds-program__awards {
     border-top: 0.5rem solid $orange;
@@ -173,6 +176,9 @@
     a {
       font-weight: bold;
     }
+  }
+  h4.ds-cards__card-title {
+    font-size: 110%;
   }
   .ds-program__synopsis {
     border-top: 1px solid $foreground-light;
