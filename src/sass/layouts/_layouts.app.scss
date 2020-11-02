@@ -1,0 +1,12 @@
+.ds-app-download__icon {
+  width: 40%;
+  height: auto;
+  @include breakpoint(sm) {
+    width: auto;
+    height: 4rem;
+  }
+}
+
+.ds-app {
+  border-top: 0.5rem solid $dark-blue;
+}

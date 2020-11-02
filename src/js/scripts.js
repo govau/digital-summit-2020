@@ -83,7 +83,6 @@
         });
     });
   }
-
   addAnchors();
   accessibilityHelpers();
   smoothScroll();
