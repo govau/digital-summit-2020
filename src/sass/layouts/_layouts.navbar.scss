@@ -1,0 +1,97 @@
+// Navbar layout
+
+.is-wrapper {
+  .nav-brand {
+    background-color: $dark-blue !important;
+    &.navbar-dark {
+      .navbar-toggler {
+        color: $foreground-light;
+        border-color: $foreground-light;
+        .navbar-toggler-icon {
+          background-image: url('data:image/svg+xml;charset=utf8,<svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"><line stroke="rgba(255, 255, 255, 1.0)" stroke-width="2" stroke-linecap="round" y2="26" x2="26" y1="4" x1="4" /><line stroke="rgba(255, 255, 255, 1.0)" stroke-width="2" stroke-linecap="round" y2="26" x2="26" y1="4" x1="4" transform="rotate(-90 15, 15)" /></svg>');
+          transition: all 0.3s ease-out;
+        }
+      }
+      .navbar-toggler.collapsed {
+        .navbar-toggler-icon {
+          background-image: url('data:image/svg+xml;charset=utf8,<svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"><path stroke="rgba(255, 255, 255, 1.0)" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/></svg>');
+        }
+      }
+    }
+    .navbar-nav {
+      .nav-link {
+        color: $foreground-light !important;
+        opacity: 1.0 !important;
+        font-family: "arial", "sans-serif" !important;
+        margin-left: -1rem;
+        &:active {
+          background-color: $foreground-light;
+          border-radius: 0.25rem;
+          color: $foreground-dark !important;
+          transition: all 0.1s ease-out;
+        }
+        &::before {
+          content: '';
+          padding-right: 2rem;
+          display: inline-block;
+          width: 1rem;
+        }
+        &.active {
+          font-weight: bold;
+          margin-left: 0rem;
+          &::before {
+            content: '>';
+            padding-right: 0.5rem;
+            display: inline-block;
+            width: 1rem;
+          }
+        }
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+    @include breakpoint(md) {
+      .navbar-nav {
+        .nav-item {
+          .nav-link {
+            text-align: center;
+            padding: 0 0 0.5rem 0;
+            margin: 0 0.5rem;
+            border-bottom: 4px solid transparent;
+            &:hover {
+              transition: border-bottom-color 0.2s ease-in-out;
+              text-decoration: none;
+              border-bottom-color: $green;
+            }
+            &:active {
+              border-bottom-color: $yellow;
+              background-color: transparent;
+              border-radius: 0;
+              color: $foreground-light !important;
+              transition: none;
+            }
+            &::before {
+              content: '';
+              display: none;
+            }
+            &.active {
+              font-weight: normal;
+              border-bottom: 4px solid $foreground-light;
+              &::before {
+                display: none;
+              }
+            }
+          }
+          &:last-of-type {
+            .nav-link {
+              &::after {
+                content: '';
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+// Main SCSS file for the Digital Summit 2020 site
+@import "variables/_variables";
+@import "base/_base";
+@import "layouts/_layouts";
+
+body {
+  background-color: transparent;
+}
+
+@include breakpoint(lg) {
+  html {
+    //background: url('/img/background-body.jpg') no-repeat center center fixed;
+    background-color: $light-grey;
+    background-size: cover;
+  }
+}

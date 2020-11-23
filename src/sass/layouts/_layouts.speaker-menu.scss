@@ -1,0 +1,33 @@
+.ds-speaker-menu {
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  li {
+    margin: 0.6rem 0;
+    border-left: 0.5rem solid transparent;
+    padding-left: 1rem;
+    &.ds-program__keynote {
+      border-left-color: $green;
+    }
+    &.ds-program__awards {
+      border-left-color: $orange;
+    }
+    &.ds-program__plenary {
+      border-left-color: $forest-green;
+    }
+    &.ds-program__welcome {
+      border-left-color: $pink;
+    }
+    &.ds-program__workshops {
+      border-left-color: $yellow;
+    }
+    &.ds-program__on-demand {
+      border-left-color: $blue;
+    }
+    &.ds-program__case-studies {
+      border-left-color: $dark-purple;
+    }
+  }
+}

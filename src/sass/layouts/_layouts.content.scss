@@ -1,0 +1,35 @@
+// Layouts for the main content area.
+
+@include background(green);
+@include background(yellow);
+@include background(grey);
+@include background(white);
+@include background(blue);
+
+.ds-highlight {
+  background: url('/img/background-highlight.jpg') no-repeat center center;
+  background-size: cover;
+  @include breakpoint(md) {
+    z-index: 0;
+    margin-top: -11rem !important;
+    padding-top: 9rem !important;
+  }
+  @include breakpoint(lg) {
+    z-index: 0;
+    margin-top: -13rem !important;
+    padding-top: 11rem !important;
+  }
+}
+
+.ds-sponsor-text {
+  @extend .visually-hidden;
+}
+
+.ds-sponsor-img {
+   background: white !important;
+   margin: 0 !important;
+}
+
+.ds-exhibitor-text {
+  @extend .visually-hidden;
+}

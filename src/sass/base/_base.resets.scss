@@ -1,0 +1,24 @@
+// Resets
+.is-boxes {
+  min-height: 0;
+}
+.is-wrapper {
+  .nav-brand {
+    background-color: inherit;
+    color: inherit;
+    font-family: sans-serif;
+  }
+  > div:not(.ds-full-width) {
+    background-color: transparent;
+  }
+  .is-box {
+    .is-container {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  p {
+    color: inherit;
+  }
+}

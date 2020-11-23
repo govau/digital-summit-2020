@@ -1,0 +1,16 @@
+// Callout
+
+.ds-callout {
+  margin-bottom: 1rem;
+  .ds-dark & {
+    background-color: transparentize($foreground-dark, 0.5);
+  }
+  .ds-light & {
+    background-color: transparentize($foreground-dark, 0.8);
+  }
+  border-left-width: 0.5rem;
+  border-left-style: solid;
+  padding: 1rem;
+  font-size: 1.2rem;
+  border-color: $yellow;
+}

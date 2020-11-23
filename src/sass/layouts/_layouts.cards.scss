@@ -1,0 +1,61 @@
+// Layouts for cards
+
+.ds-cards {
+  .ds-cards__card {
+    .ds-cards__card-inner {
+      height: 100%;
+      padding: 0.5rem 1rem;
+      p, li, a {
+        font-size: 100%;
+      }
+    }
+    padding: 0.5rem;
+  }
+}
+
+.ds-highlight .ds-cards {
+  .ds-cards__card {
+    .ds-cards__card-inner {
+      background-color: transparentize($dark-blue, 0.1) !important;
+      border-left: 0.25rem solid $yellow;
+      * {
+        color: $foreground-light !important;
+      }
+    }
+  }
+}
+
+.ds-dark .ds-cards {
+  .ds-cards__card {
+    .ds-cards__card-inner {
+      background-color: $foreground-light;
+      * {
+        color: $foreground-dark;
+      }
+    }
+  }
+}
+
+.ds-light .ds-cards {
+  .ds-cards__card {
+    .ds-cards__card-inner {
+      background-color: $dark-blue;
+      * {
+        color: $foreground-light;
+      }
+    }
+  }
+}
+
+.ds-cards__card-text {
+  font-size: 100%;
+}
+.ds-cards__card-intro {
+  font-weight: bold;
+}
+.ds-cards__card-image {
+  width:100%;
+  margin-bottom: 1rem;
+  height: auto;
+  background-color: $foreground-light;
+}
